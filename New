@@ -1,0 +1,59 @@
+Coupon Pay
+
+IF ((UniversalReportMurexCash_query, RECORD TYPE Coupon' AND (UniversalReportMurexCash_query.AMOUNT) <8) OR ((UniversalReportMurexCash_query.RECORD TYPE] = 'FX Settlement'
+
+AND ( UniversalReportMurexCash_query.AMOUNT} <8) OR ((Universal ReportMurexCash_query.RECORD_TYPE = GC Settlement' AND (UniversalReportMurexCash_query.AMOUNT] <8) OR (((UniversalReportMurexCash_query.RECORD_TYPE] 'Credit Event Final Coupon
+
+OR (UniversalReportMurexCash_query.RECORD_TYPE) Credit Event Rebate
+
+OR (UniversalReportMurexCash_query. RECORD TYPE)
+
+AND (UniversalReportMurexCash_query.AMOUNT} <8)
+
+'Credit Event Settlement')
+
+THEN (Universal ReportMurexCash_query.AMOUNT}
+
+ELSE
+
+Coupon Receive
+
+IF ((UniversalReportMurexCash_query.RECORD_TYPE) Coupon' AND (Universal ReportMurexCash_query.AMOUNT} > 0)
+
+OR ((UniversalReportMurexCash_query. RECORD_TYPE] OR ((UniversalReportMurexCash_query.RECORD_TYPE] *FX Settlement AND (UniversalReportMurexCash_query.AMOUNT} > 8) GC Settlement AND (Universal Report MurexCash_query.AMOUNT] > 0)
+
+Oll (((UniversalReportMurexCash_query.RECORD_TYPE] 'Credit Event Final Coupon OR (UniversalReportMurexCash query. RECORD TYPE)
+
+OR (UniversalReportMurexCash_query.RECORD TYPE) AND (Universal Report MurexCash_query.AMOUNT) > 0)
+
+'Credit Event Rebate" "Credit Event Settlement')
+
+THEN (Universal Report MurexCash query. AMOUNT) ELSE
+
+PAT IF ((UniversalReportMurexCash query RECORD TYPE) - ΡΑΙ")
+
+THEN (Universal ReportMurexCash query AMOUNT)
+
+ELSE O
+
+(@PAI]+(@Upfront Fee)+(@Coupon Pay)+(@Coupon Receive)+(@VM)
+
+Trade Cash Flow
+
+Trade Cash Flow Base
+
+(@Trade Cash Flow) (UniversalReportMurexCash_query.FX_RATE)
+
+Upfront Fee
+
+IF ((UniversalReportMurexCash query RECORD_TYPE) 'Upfront Payment')
+
+THEN (UniversalReportMurexCash_query.AMOUNT)
+
+ELSE e
+
+IF ((UniversalReportMurexCash_query.RECORD_TYPE] = 'VM)
+
+THEN [UniversalReportMurexCash_query.AMOUNT}
+
+ELSE O
